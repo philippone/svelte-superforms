@@ -4,7 +4,12 @@
     "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "strict": true
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "$app": ["src/sveltekit/app"],
+      "$app/*": ["src/sveltekit/app/*"]
+    }
   },
   "include": ["vite.config.ts"]
 }
